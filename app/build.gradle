@@ -1,0 +1,41 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'es.medac.sergiomitchell.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "es.medac.sergiomitchell.app"
+        // API 24 (Android 7.0): cubre la práctica totalidad de móviles en uso
+        // y permite iconos adaptativos (API 26+) con respaldo en PNG/WebP.
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

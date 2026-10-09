@@ -1,0 +1,5 @@
+// Fichero de compilación de nivel superior: aquí solo se declaran los plugins
+// que usarán los módulos (en este proyecto, únicamente :app).
+plugins {
+    alias(libs.plugins.android.application) apply false
+}
