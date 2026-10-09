@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Formulario "Nueva operación". Interfaz de NuevaOperacionActivity.java.
+    Los desplegables se rellenan con string-array (android:entries) y los campos
+    reutilizan Estilo.Campo; los botones, los mismos estilos que la pantalla principal.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/raiz_formulario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NuevaOperacionActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/barra_superior"
+        style="@style/Estilo.BarraSuperior" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margen_pantalla">
+
+            <TextView
+                style="@style/Estilo.Subtitulo"
+                android:text="@string/subtitulo_nueva_operacion" />
+
+            <!-- Bloque 1: qué se operó -->
+            <com.google.android.material.card.MaterialCardView style="@style/Estilo.Tarjeta">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Estilo.Etiqueta"
+                        android:layout_marginTop="@dimen/sin_margen"
+                        android:labelFor="@+id/sp_instrumento"
+                        android:text="@string/etiqueta_instrumento" />
+
+                    <Spinner
+                        android:id="@+id/sp_instrumento"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alto_boton"
+                        android:entries="@array/instrumentos" />
+
+                    <TextView
+                        style="@style/Estilo.Etiqueta"
+                        android:text="@string/etiqueta_direccion" />
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/grupo_direccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:checkedButton="@+id/btn_largo"
+                        app:selectionRequired="true"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_largo"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/direccion_largo" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_corto"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/direccion_corto" />
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Estilo.Campo"
+                        android:hint="@string/hint_precio_entrada">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_entrada"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Estilo.Campo"
+                        android:hint="@string/hint_precio_salida">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_salida"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Estilo.Campo"
+                        android:hint="@string/hint_contratos">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_contratos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bloque 2: por qué y cómo -->
+            <com.google.android.material.card.MaterialCardView style="@style/Estilo.Tarjeta">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Estilo.Etiqueta"
+                        android:layout_marginTop="@dimen/sin_margen"
+                        android:labelFor="@+id/sp_setup"
+                        android:text="@string/etiqueta_setup" />
+
+                    <Spinner
+                        android:id="@+id/sp_setup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alto_boton"
+                        android:entries="@array/setups" />
+
+                    <TextView
+                        style="@style/Estilo.Etiqueta"
+                        android:labelFor="@+id/sp_emocion"
+                        android:text="@string/etiqueta_emocion" />
+
+                    <Spinner
+                        android:id="@+id/sp_emocion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/alto_boton"
+                        android:entries="@array/emociones" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Estilo.Campo"
+                        android:hint="@string/hint_notas">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_notas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|start"
+                            android:inputType="textMultiLine|textCapSentences"
+                            android:minHeight="@dimen/alto_notas" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_guardar"
+                style="@style/Estilo.Boton.Principal"
+                android:layout_marginTop="@dimen/margen_seccion"
+                android:text="@string/boton_guardar"
+                app:icon="@drawable/ic_guardar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancelar"
+                style="@style/Estilo.Boton.Secundario"
+                android:text="@string/boton_cancelar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

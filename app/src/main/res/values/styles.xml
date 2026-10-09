@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Estilos propios de Bitácora Trader. Cada estilo se define una vez y se reutiliza
+    en las dos pantallas: si cambia el diseño de un botón, se cambia solo aquí.
+-->
+<resources>
+
+    <!-- Textos -->
+    <style name="Estilo.Titulo" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_texto_principal</item>
+    </style>
+
+    <style name="Estilo.Subtitulo" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/espacio_minimo</item>
+        <item name="android:textSize">@dimen/texto_subtitulo</item>
+        <item name="android:textColor">@color/color_texto_secundario</item>
+    </style>
+
+    <style name="Estilo.TituloSeccion" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_seccion</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_texto_principal</item>
+    </style>
+
+    <style name="Estilo.Etiqueta" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/espacio_medio</item>
+        <item name="android:layout_marginBottom">@dimen/espacio_minimo</item>
+        <item name="android:textSize">@dimen/texto_etiqueta</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/color_texto_secundario</item>
+    </style>
+
+    <!-- Nota al pie (hereda de Subtitulo por nombre: Estilo.Subtitulo.Nota) -->
+    <style name="Estilo.Subtitulo.Nota">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/margen_seccion</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/texto_etiqueta</item>
+    </style>
+
+    <!-- Cifra destacada del resumen (hereda de Titulo y cambia solo el tamaño) -->
+    <style name="Estilo.Titulo.Dato">
+        <item name="android:textSize">@dimen/texto_dato</item>
+    </style>
+
+    <!-- Botones -->
+    <style name="Estilo.Boton.Principal" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alto_boton</item>
+        <item name="android:layout_marginTop">@dimen/espacio_medio</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:textColor">@color/color_sobre_primario</item>
+        <item name="backgroundTint">@color/color_primario</item>
+        <item name="iconTint">@color/color_sobre_primario</item>
+        <item name="cornerRadius">@dimen/radio_boton</item>
+    </style>
+
+    <style name="Estilo.Boton.Secundario" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alto_boton</item>
+        <item name="android:layout_marginTop">@dimen/espacio_medio</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:textColor">@color/color_primario</item>
+        <item name="iconTint">@color/color_primario</item>
+        <item name="strokeColor">@color/color_primario</item>
+        <item name="cornerRadius">@dimen/radio_boton</item>
+    </style>
+
+    <!-- Contenedores -->
+    <style name="Estilo.Tarjeta" parent="Widget.Material3.CardView.Outlined">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margen_pantalla</item>
+        <item name="cardBackgroundColor">@color/color_superficie</item>
+        <item name="cardCornerRadius">@dimen/radio_tarjeta</item>
+        <item name="cardElevation">@dimen/elevacion_tarjeta</item>
+        <item name="strokeColor">@color/color_borde</item>
+        <item name="strokeWidth">@dimen/ancho_borde</item>
+        <item name="contentPadding">@dimen/margen_pantalla</item>
+    </style>
+
+    <!-- Campos de texto del formulario -->
+    <style name="Estilo.Campo" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/espacio_medio</item>
+        <item name="boxStrokeColor">@color/color_primario</item>
+        <item name="hintTextColor">@color/color_primario</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radio_boton</item>
+    </style>
+
+    <!-- Esquinas redondeadas para imágenes (ShapeableImageView) -->
+    <style name="Estilo.FormaRedondeada" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radio_tarjeta</item>
+    </style>
+
+    <!-- Barra superior de las dos pantallas -->
+    <style name="Estilo.BarraSuperior" parent="Widget.Material3.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/color_barra_superior</item>
+        <item name="titleTextColor">@color/color_sobre_primario_fijo</item>
+        <item name="navigationIconTint">@color/color_sobre_primario_fijo</item>
+    </style>
+</resources>
