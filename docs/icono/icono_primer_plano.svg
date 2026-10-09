@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <!-- Primer plano del icono de Bitácora Trader (fuente para Image Asset) -->
+  <g stroke-linecap="round">
+    <line x1="40" y1="42" x2="40" y2="72" stroke="#3DBE84" stroke-width="2.5"/>
+    <rect x="35.5" y="49" width="9" height="16" fill="#3DBE84"/>
+    <line x1="54" y1="34" x2="54" y2="64" stroke="#F0665B" stroke-width="2.5"/>
+    <rect x="49.5" y="40" width="9" height="17" fill="#F0665B"/>
+    <line x1="68" y1="30" x2="68" y2="58" stroke="#3DBE84" stroke-width="2.5"/>
+    <rect x="63.5" y="34" width="9" height="16" fill="#3DBE84"/>
+    <line x1="34" y1="77" x2="74" y2="77" stroke="#FFC233" stroke-width="3.5"/>
+  </g>
+</svg>

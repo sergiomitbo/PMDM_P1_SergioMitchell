@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logotipo vectorial: tres velas japonesas sobre fondo azul marino. Escala sin perder calidad. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@color/color_barra_superior"
+        android:pathData="M10,0h28a10,10 0,0 1,10 10v28a10,10 0,0 1,-10 10h-28a10,10 0,0 1,-10 -10v-28a10,10 0,0 1,10 -10z" />
+    <path
+        android:strokeColor="#3DBE84"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M14,14L14,35" />
+    <path
+        android:fillColor="#3DBE84"
+        android:pathData="M11,19h6v11h-6z" />
+    <path
+        android:strokeColor="#F0665B"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M24,10L24,31" />
+    <path
+        android:fillColor="#F0665B"
+        android:pathData="M21,14h6v11h-6z" />
+    <path
+        android:strokeColor="#3DBE84"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M34,8L34,27" />
+    <path
+        android:fillColor="#3DBE84"
+        android:pathData="M31,11h6v10h-6z" />
+    <path
+        android:strokeColor="#FFC233"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M9,39L39,39" />
+</vector>
