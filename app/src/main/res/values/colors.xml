@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Paleta de Bitácora Trader (modo claro). Nombres por FUNCIÓN, no por tono:
+    si mañana cambia el azul, el nombre sigue siendo válido.
+    · Azul marino: seriedad y confianza, el lenguaje visual de las plataformas financieras.
+    · Verde / rojo: convención universal de las velas (sube / baja), solo para resultados.
+    · Ámbar: acento para destacar sin confundirse con ganancia o pérdida.
+-->
+<resources>
+    <color name="color_barra_superior">#0F2A44</color>
+    <color name="color_primario">#1D4E7A</color>
+    <color name="color_sobre_primario">#FFFFFF</color>
+    <!-- Texto de la barra superior: siempre blanco porque la barra es oscura en ambos modos -->
+    <color name="color_sobre_primario_fijo">#FFFFFF</color>
+    <color name="color_acento">#F2A900</color>
+    <color name="color_sobre_acento">#1A1A1A</color>
+    <color name="color_ganancia">#1E8E5A</color>
+    <color name="color_perdida">#C8372D</color>
+    <color name="color_fondo">#F4F6F9</color>
+    <color name="color_superficie">#FFFFFF</color>
+    <color name="color_texto_principal">#14202E</color>
+    <color name="color_texto_secundario">#5B6B7C</color>
+    <!-- Fondo de elementos seleccionados (botón Largo/Corto marcado) -->
+    <color name="color_seleccion">#D6E4F2</color>
+    <color name="color_borde">#D5DCE4</color>
+</resources>

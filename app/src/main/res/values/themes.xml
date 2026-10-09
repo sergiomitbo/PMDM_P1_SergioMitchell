@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Tema de la aplicación: parte de Material 3 (DayNight) y sustituye sus colores
+        por la paleta propia de colors.xml. Al usar DayNight + values-night/colors.xml
+        el modo oscuro funciona sin duplicar el tema.
+    -->
+    <style name="Base.Theme.BitacoraTrader" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primario</item>
+        <item name="colorOnPrimary">@color/color_sobre_primario</item>
+        <item name="colorPrimaryContainer">@color/color_seleccion</item>
+        <item name="colorOnPrimaryContainer">@color/color_texto_principal</item>
+        <item name="colorSecondary">@color/color_acento</item>
+        <item name="colorSecondaryContainer">@color/color_seleccion</item>
+        <item name="colorOnSecondaryContainer">@color/color_texto_principal</item>
+        <item name="colorOnSecondary">@color/color_sobre_acento</item>
+        <item name="colorTertiary">@color/color_ganancia</item>
+        <item name="colorError">@color/color_perdida</item>
+        <item name="colorSurface">@color/color_superficie</item>
+        <item name="colorOnSurface">@color/color_texto_principal</item>
+        <item name="colorOnSurfaceVariant">@color/color_texto_secundario</item>
+        <item name="colorOutline">@color/color_borde</item>
+        <item name="android:colorBackground">@color/color_fondo</item>
+        <item name="android:textColorPrimary">@color/color_texto_principal</item>
+        <item name="android:textColorSecondary">@color/color_texto_secundario</item>
+        <!-- Iconos claros en la barra de estado, que queda sobre la barra superior oscura -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.BitacoraTrader" parent="Base.Theme.BitacoraTrader" />
+</resources>

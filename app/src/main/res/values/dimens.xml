@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Medidas de la app: dp para tamaños y márgenes, sp para textos (respetan el tamaño de letra del usuario). -->
+<resources>
+    <!-- Márgenes y espacios -->
+    <dimen name="margen_pantalla">16dp</dimen>
+    <dimen name="margen_seccion">24dp</dimen>
+    <dimen name="espacio_pequeno">8dp</dimen>
+    <dimen name="espacio_medio">12dp</dimen>
+    <dimen name="espacio_minimo">4dp</dimen>
+    <dimen name="sin_margen">0dp</dimen>
+
+    <!-- Tamaños de elementos -->
+    <dimen name="tamano_logo">56dp</dimen>
+    <dimen name="tamano_icono">24dp</dimen>
+    <dimen name="alto_banner">160dp</dimen>
+    <dimen name="alto_boton">56dp</dimen>
+    <dimen name="alto_notas">120dp</dimen>
+    <dimen name="radio_tarjeta">16dp</dimen>
+    <dimen name="radio_boton">12dp</dimen>
+    <dimen name="elevacion_tarjeta">0dp</dimen>
+    <dimen name="ancho_borde">1dp</dimen>
+
+    <!-- Tamaños de texto -->
+    <dimen name="texto_titulo">24sp</dimen>
+    <dimen name="texto_subtitulo">16sp</dimen>
+    <dimen name="texto_seccion">18sp</dimen>
+    <dimen name="texto_cuerpo">14sp</dimen>
+    <dimen name="texto_etiqueta">12sp</dimen>
+    <dimen name="texto_dato">22sp</dimen>
+    <dimen name="texto_boton">16sp</dimen>
+</resources>
