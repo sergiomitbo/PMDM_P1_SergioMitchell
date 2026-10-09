@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nombre de marca: no se traduce -->
+    <string name="app_name" translatable="false">Bitácora Trader</string>
+    <string name="nombre_usuario_defecto" translatable="false">Sergio</string>
+    <string name="ejemplo_instrumento" translatable="false">MES</string>
+    <string name="ejemplo_resultado" translatable="false">340</string>
+    <string name="signo_positivo" translatable="false">+</string>
+
+    <!-- Pantalla principal -->
+    <string name="saludo">Hola, %1$s</string>
+    <string name="subtitulo_inicio">Tu diario de operaciones en cuenta demo</string>
+    <string name="desc_logo">Logotipo de Bitácora Trader</string>
+    <string name="desc_banner">Gráfico de velas japonesas de una sesión de futuros</string>
+    <string name="titulo_resumen">Resumen de la semana</string>
+    <string name="etiqueta_operaciones">Operaciones</string>
+    <string name="etiqueta_acierto">Acierto</string>
+    <string name="etiqueta_resultado">Resultado</string>
+    <string name="formato_entero">%1$d</string>
+    <string name="formato_porcentaje">%1$d %%</string>
+    <!-- %1$s = signo (+/−), %2$s = importe -->
+    <string name="formato_resultado">%1$s%2$s $</string>
+    <string name="titulo_ultima_operacion">Última operación</string>
+    <string name="detalle_operacion">%1$s · %2$s · %3$s puntos</string>
+    <string name="ejemplo_puntos">+4,25</string>
+    <string name="direccion_largo">Largo</string>
+    <string name="direccion_corto">Corto</string>
+    <string name="boton_nueva_operacion">Nueva operación</string>
+    <string name="boton_ver_diario">Ver diario</string>
+    <string name="aviso_proximamente">El diario completo llegará en la próxima versión</string>
+    <string name="nota_cuenta_demo">Cuenta demo: aquí no se arriesga dinero real</string>
+
+    <!-- Pantalla Nueva operación -->
+    <string name="titulo_nueva_operacion">Nueva operación</string>
+    <string name="subtitulo_nueva_operacion">Anótala nada más cerrarla, con la cabeza fría</string>
+    <string name="etiqueta_instrumento">Instrumento</string>
+    <string name="etiqueta_direccion">Dirección</string>
+    <string name="hint_precio_entrada">Precio de entrada</string>
+    <string name="hint_precio_salida">Precio de salida</string>
+    <string name="hint_contratos">Número de contratos</string>
+    <string name="etiqueta_setup">Estrategia (setup)</string>
+    <string name="etiqueta_emocion">¿Cómo te sentías?</string>
+    <string name="hint_notas">Notas: qué viste, qué hiciste y qué cambiarías</string>
+    <string name="boton_guardar">Guardar operación</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="aviso_guardado">Operación guardada (versión de demostración)</string>
+
+    <!-- Listas para los desplegables (Spinner) -->
+    <string-array name="instrumentos">
+        <item>MES · Micro S&amp;P 500</item>
+        <item>MNQ · Micro Nasdaq 100</item>
+        <item>MYM · Micro Dow Jones</item>
+        <item>M2K · Micro Russell 2000</item>
+        <item>MGC · Micro Oro</item>
+        <item>MCL · Micro Petróleo</item>
+    </string-array>
+
+    <string-array name="setups">
+        <item>Ruptura de rango</item>
+        <item>Retroceso a la media</item>
+        <item>Rebote en soporte</item>
+        <item>Giro en resistencia</item>
+        <item>Sin setup claro</item>
+    </string-array>
+
+    <string-array name="emociones">
+        <item>Tranquilo</item>
+        <item>Con dudas</item>
+        <item>Con prisa (FOMO)</item>
+        <item>Frustrado</item>
+        <item>Demasiado confiado</item>
+    </string-array>
+</resources>

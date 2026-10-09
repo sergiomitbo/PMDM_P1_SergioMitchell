@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main screen -->
+    <string name="saludo">Hi, %1$s</string>
+    <string name="subtitulo_inicio">Your demo account trading journal</string>
+    <string name="desc_logo">Bitácora Trader logo</string>
+    <string name="desc_banner">Candlestick chart of a futures session</string>
+    <string name="titulo_resumen">This week at a glance</string>
+    <string name="etiqueta_operaciones">Trades</string>
+    <string name="etiqueta_acierto">Win rate</string>
+    <string name="etiqueta_resultado">P&amp;L</string>
+    <string name="formato_entero">%1$d</string>
+    <string name="formato_porcentaje">%1$d%%</string>
+    <string name="formato_resultado">%1$s$%2$s</string>
+    <string name="titulo_ultima_operacion">Last trade</string>
+    <string name="detalle_operacion">%1$s · %2$s · %3$s points</string>
+    <string name="ejemplo_puntos">+4.25</string>
+    <string name="direccion_largo">Long</string>
+    <string name="direccion_corto">Short</string>
+    <string name="boton_nueva_operacion">New trade</string>
+    <string name="boton_ver_diario">Open journal</string>
+    <string name="aviso_proximamente">The full journal is coming in the next version</string>
+    <string name="nota_cuenta_demo">Demo account: no real money at risk here</string>
+
+    <!-- New trade screen -->
+    <string name="titulo_nueva_operacion">New trade</string>
+    <string name="subtitulo_nueva_operacion">Log it right after closing, with a cool head</string>
+    <string name="etiqueta_instrumento">Instrument</string>
+    <string name="etiqueta_direccion">Direction</string>
+    <string name="hint_precio_entrada">Entry price</string>
+    <string name="hint_precio_salida">Exit price</string>
+    <string name="hint_contratos">Number of contracts</string>
+    <string name="etiqueta_setup">Strategy (setup)</string>
+    <string name="etiqueta_emocion">How did you feel?</string>
+    <string name="hint_notas">Notes: what you saw, what you did and what you would change</string>
+    <string name="boton_guardar">Save trade</string>
+    <string name="boton_cancelar">Cancel</string>
+    <string name="aviso_guardado">Trade saved (demo version)</string>
+
+    <!-- Spinner lists -->
+    <string-array name="instrumentos">
+        <item>MES · Micro S&amp;P 500</item>
+        <item>MNQ · Micro Nasdaq 100</item>
+        <item>MYM · Micro Dow Jones</item>
+        <item>M2K · Micro Russell 2000</item>
+        <item>MGC · Micro Gold</item>
+        <item>MCL · Micro Crude Oil</item>
+    </string-array>
+
+    <string-array name="setups">
+        <item>Range breakout</item>
+        <item>Pullback to the mean</item>
+        <item>Support bounce</item>
+        <item>Resistance rejection</item>
+        <item>No clear setup</item>
+    </string-array>
+
+    <string-array name="emociones">
+        <item>Calm</item>
+        <item>Hesitant</item>
+        <item>Rushed (FOMO)</item>
+        <item>Frustrated</item>
+        <item>Overconfident</item>
+    </string-array>
+</resources>
