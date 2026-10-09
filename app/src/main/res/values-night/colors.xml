@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Paleta en modo oscuro (values-night). Mismos nombres que en values/colors.xml:
+    Android elige un fichero u otro según el modo del sistema, sin tocar los layouts.
+    Se aclaran los tonos para mantener el contraste sobre fondo oscuro.
+-->
+<resources>
+    <color name="color_barra_superior">#0A121C</color>
+    <color name="color_primario">#5EA0E0</color>
+    <color name="color_sobre_primario">#0A121C</color>
+    <color name="color_acento">#FFC233</color>
+    <color name="color_sobre_acento">#1A1A1A</color>
+    <color name="color_ganancia">#3DBE84</color>
+    <color name="color_perdida">#F0665B</color>
+    <color name="color_fondo">#0E1621</color>
+    <color name="color_superficie">#17222F</color>
+    <color name="color_texto_principal">#E8EEF4</color>
+    <color name="color_texto_secundario">#9AAABB</color>
+    <!-- Fondo de elementos seleccionados (botón Largo/Corto marcado) -->
+    <color name="color_seleccion">#1E3A56</color>
+    <color name="color_borde">#2A3A4C</color>
+</resources>
